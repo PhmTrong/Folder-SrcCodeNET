@@ -50,7 +50,7 @@ namespace BaiThucHanh7
                 LoadDataToView();
                 return;
             }
-            txtMessage.InnerText = "Đã xảy ra lỗi";
+            txtMessage.InnerText = "Xảy ra lỗi";
         }
 
         protected void btnDelete_ServerClick(object sender, EventArgs e)
@@ -58,15 +58,15 @@ namespace BaiThucHanh7
             string username = txtUsername.Value;
             if (!UserController.Exist(username))
             {
-                txtMessage.InnerText = "Không xóa được, username không tồn tại";
+                txtMessage.InnerText = "Username không tồn tại,không thể xóa";
                 return;
             }
             if (UserController.Delete(username))
             {
-                txtMessage.InnerText = $"Tài khoản {username} đã bị xóa";
+                txtMessage.InnerText = $"Tài khoản {username} đã xóa";
                 return;
             }
-            txtMessage.InnerText = "Đã xảy ra lỗi";
+            txtMessage.InnerText = "Xảy ra Lỗi";
         }
     }
 }

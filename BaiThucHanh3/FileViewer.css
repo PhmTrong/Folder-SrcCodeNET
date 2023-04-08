@@ -1,13 +1,15 @@
 ﻿:root {
-    --bg: purple;
+    --bg: #66CC33;
 }
 
 * {
+    padding:0;
+    margin:0;
     box-sizing: border-box;
 }
 
 div {
-    border: 2px solid var(--bg);
+    border: 5px solid var(--bg);
     max-width: 400px;
 }
 
@@ -19,15 +21,20 @@ header {
     padding: 1rem;
 }
 
-    header button {
-        background-color: darkslateblue;
-        border: none;
-        color: white;
-        cursor: pointer;
-        padding: 0.25rem 0.5rem;
-    }
+.btn-send{
+    cursor:pointer;
+}
+
+header button {
+    background-color:ghostwhite;
+    border: none;
+    color: black;
+    cursor: pointer;
+    padding: 0.25rem 0.5rem;
+}
 
 form{
     display:flex;
     flex-direction:column;
 }
+

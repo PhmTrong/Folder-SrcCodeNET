@@ -12,18 +12,18 @@
         <h1>Guest Book</h1>
         <form id="guestBook" runat="server">
             <div class="input-group">
-                <label for="txtTieuDe">Tiêu đề</label>
-                <input type="text" id="txtTieuDe" runat="server" />
+                <label for="txtTieuDe" >Tiêu đề</label>
+                <input type="text" id="txtTieuDe" runat="server" placeholder="Nhập tiêu đề" />
                 <asp:RequiredFieldValidator ID="tieuDeValidator" runat="server" ErrorMessage="Vui lòng nhập tiêu đề" ControlToValidate="txtTieuDe"></asp:RequiredFieldValidator>
             </div>
             <div class="input-group">
                 <label for="txtHoTen">Họ tên</label>
-                <input type="text" id="txtHoTen" runat="server" />
+                <input type="text" id="txtHoTen" runat="server" placeholder="Nhập họ tên"/>
                 <asp:RequiredFieldValidator ID="hoTenValidator" runat="server" ErrorMessage="Vui lòng nhập họ tên" ControlToValidate="txtHoTen"></asp:RequiredFieldValidator>
             </div>
             <div class="input-group">
                 <label for="txtEmail">Email</label>
-                <input type="email" id="txtEmail" runat="server" />
+                <input type="email" id="txtEmail" runat="server" placeholder="Nhập email"/>
                 <asp:RegularExpressionValidator ID="emailValidator" runat="server" ErrorMessage="Vui lòng nhập đúng định dạng email" ControlToValidate="txtEmail" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
             </div>
             <div class="input-group">
@@ -39,7 +39,7 @@
         </form>
     </div>
     <div class="container">
-        <h1>Danh sách comment <span id="commentCount" runat="server"></span></h1>
+        <h1>Comment <span id="commentCount" runat="server"></span></h1>
         <div class="comment-container">
         <asp:Repeater ID="commentRepeater" runat="server">
             <ItemTemplate>

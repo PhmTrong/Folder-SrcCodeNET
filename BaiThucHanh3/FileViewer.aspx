@@ -10,12 +10,12 @@
 <body>
     <div>
         <header>
-            <button>Upload tập tin</button>
-            <button>Xem các tập tin được upload</button>
+            <button>Upload </button>
+            <button>View File Upload</button>
         </header>
         <form>
             <input type="file" runat="server" id="inputFile"/>
-            <button type="submit" runat="server" onserverclick="GuiFile_Click">Gửi tập tin</button>
+            <button class="btn-send" type="submit" runat="server" onserverclick="GuiFile_Click">Gửi</button>
         </form>
     </div>
 </body>

@@ -17,7 +17,7 @@
             <label for="txtPassword">Password</label>
             <input type="password" id="txtPassword" runat="server"/>
         </div>
-        <input id="btnSubmit" class="btn" type="submit" value="Sign in now!" runat="server" onserverclick="btnSubmit_ServerClick"/>
+        <input id="btnSubmit" class="btn" type="submit" value="Sign in!" runat="server" onserverclick="btnSubmit_ServerClick"/>
         <div id="divInfo" runat="server"></div>
     </form>
 </body>

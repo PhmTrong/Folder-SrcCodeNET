@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <link rel="stylesheet" href="QuanLyTaiKhoan.css" />
-    <title>Quản lý tài khoản</title>
+    <title>Phan Minh Trọng</title>
 </head>
 <body>
     <form id="form" runat="server">

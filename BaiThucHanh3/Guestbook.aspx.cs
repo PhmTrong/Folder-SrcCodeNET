@@ -62,8 +62,6 @@ namespace BaiThucHanh3
                 commentRepeater.DataSource = commentList.AsEnumerable();
                 commentRepeater.DataBind();
             }
-            
-        
     }
 
     public class Comment

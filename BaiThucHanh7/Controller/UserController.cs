@@ -17,7 +17,7 @@ namespace BaiThucHanh7.Controller
 
         public static bool Exist(string username)
         {
-            string queryString = @"SELECT COUNT(*) FROM [dbo].[UserInfo] WHERE Username = @name";
+            string queryString = @"SELECT COUNT(*) FROM [dbo].[UserInfo] WHERE UserName = @name";
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand command = new SqlCommand(queryString, connection);
             command.Parameters.AddWithValue("@name", username);
@@ -56,7 +56,7 @@ namespace BaiThucHanh7.Controller
         public static bool Insert(User user)
         {
             string queryString = @"INSERT INTO [dbo].[UserInfo] 
-                                    ([Id], [Username], [Password], [FirstName], [LastName], [Email], [Gender], [Address])
+                                    ([Id], [UserName], [PassWord], [FirtsName], [LastName], [Email], [Gender], [Address])
                                     VALUES (@id, @username, @password, @firstName, @lastName, @email, @gender, @address)";
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand command = new SqlCommand(queryString, connection);
@@ -79,7 +79,7 @@ namespace BaiThucHanh7.Controller
         public static bool Delete(string username)
         {
             string queryString = @"DELETE FROM [dbo].[UserInfo] 
-                                    WHERE Username = @username";
+                                    WHERE UserName = @username";
             SqlConnection connection = new SqlConnection(connectionString);
             SqlCommand command = new SqlCommand(queryString, connection);
             command.Parameters.AddWithValue("@username", username);
